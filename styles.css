@@ -187,3 +187,46 @@ input, select, textarea {
   text-align: center;
   margin-top: 10px;
 }
+
+@media (min-width: 768px) {
+  #services {
+    text-align: center;
+    padding: 20px;
+    width: 100%; /* Ensures it spans the full width */
+}
+
+  #service-plans {
+      display: flex;
+      justify-content: space-around; /* Distributes space evenly */
+      flex-wrap: wrap; /* Ensures responsiveness */
+      align-items: stretch; /* Ensures equal height for all items */
+  }
+
+  #service-plans > div {
+      width: 30%; /* Adjust width for better fit */
+      margin: 10px;
+      display: flex;
+      flex-direction: column; /* Allows content to fill evenly */
+  }
+
+  #service-plans > div > p {
+      flex-grow: 1; /* Makes text content expand to fill space */
+  }
+
+  .subscribe-btn {
+      margin-top: auto; /* Pushes button to the bottom */
+  }
+}
+
+
+@media (min-width: 1024px) {
+  #service-plans {
+      justify-content: center; /* Centers items on very large screens */
+      gap: 20px; /* Adds spacing */
+  }
+
+  #service-plans > div {
+      width: 28%; /* Makes them slightly smaller for better alignment */
+  }
+}
+  
