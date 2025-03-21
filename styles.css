@@ -14,6 +14,7 @@ body{
   background-color: #fff;
   display: flex;
   justify-content: space-between;
+  width: 100vh
   align-items: center;
   padding: 10px 20px;
   position: sticky;
@@ -22,12 +23,12 @@ body{
 }
 
 header img{
-  width: 75px;
+  width: 50px;
 }
 
 #nav-bar{
   display: flex;
-  gap: 20px;
+  gap: 15px;
   align-items: center;
 }
 
@@ -36,8 +37,8 @@ header img{
   border: orange 1px solid;
   border-radius: none;
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 400;
   padding: 10px 15px;
   margin-right: 10px;
 }
@@ -189,6 +190,17 @@ input, select, textarea {
 }
 
 @media (min-width: 768px) {
+  .nav-link{
+    color: orange;
+    border: orange 1px solid;
+    border-radius: none;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    margin-right: 10px;
+  }
+  
   #services {
     text-align: center;
     padding: 20px;
@@ -220,6 +232,17 @@ input, select, textarea {
 
 
 @media (min-width: 1024px) {
+  .nav-link{
+    color: orange;
+    border: orange 1px solid;
+    border-radius: none;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    margin-right: 10px;
+  }
+  
   #service-plans {
       justify-content: center; /* Centers items on very large screens */
       gap: 20px; /* Adds spacing */
@@ -229,4 +252,82 @@ input, select, textarea {
       width: 28%; /* Makes them slightly smaller for better alignment */
   }
 }
-  
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-container div {
+  flex: 1;
+  min-width: 200px;
+}
+
+body > footer > div.footer-container > div.footer-branding > img{
+  width: 50px;
+}
+
+body > footer > div.footer-container > div.footer-branding > p{
+  font-size: 14px;
+  margin-top: 10px;
+  color: whitesmoke;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  text-align: right;
+}
+
+.footer-links ul li {
+  margin: 5px 0;
+}
+
+.footer-links ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social img {
+  width: 30px;
+  margin: 5px;
+}
+body > footer > div.footer-container > div.footer-newsletter > h3{
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+.footer-newsletter input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.footer-newsletter button {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 12px;
+}
